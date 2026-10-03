@@ -1,0 +1,567 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0f1a;
+    color: white;
+}
+
+
+/* --------- ENCABEZADO --------- */
+
+header {
+    background-color: #151525;
+    padding: 20px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #8b5cf6;
+}
+
+
+/* --------- MENÚ --------- */
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #8b5cf6;
+}
+
+
+/* --------- PRESENTACIÓN --------- */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+.hero h2 {
+    font-size: 50px;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    color: #cfcfcf;
+    margin-bottom: 30px;
+}
+
+
+/* --------- BOTÓN --------- */
+
+button {
+    background-color: #8b5cf6;
+    color: white;
+
+    border: none;
+    padding: 14px 30px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6d3fd1;
+}
+
+
+/* --------- VIDEOJUEGOS --------- */
+
+.juegos {
+    padding: 60px;
+    text-align: center;
+}
+
+.juegos h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.contenedor-juegos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* --------- TARJETAS --------- */
+
+.tarjeta {
+    background-color: #1b1b2d;
+
+    width: 280px;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+.tarjeta h3 {
+    color: #8b5cf6;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    color: #cfcfcf;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 160px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+}
+
+/* --------- PIE DE PÁGINA --------- */
+
+footer {
+    background-color: #151525;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 50px;
+
+    color: #999;
+}
+
+/* --------- CALIFICACION --------- */
+
+.calificacion {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #f5c542;
+}
+
+/* --------- CATÁLOGO --------- */
+
+.catalogo {
+    padding: 60px;
+    text-align: center;
+}
+
+.catalogo h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.catalogo > p {
+    color: #cfcfcf;
+    margin-bottom: 50px;
+}
+
+
+/* --------- LISTA DE JUEGOS --------- */
+
+.lista-juegos {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* --------- CADA VIDEOJUEGO --------- */
+
+.juego {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    background-color: #1b1b2d;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    border-radius: 15px;
+
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+.juego:hover {
+    transform: scale(1.02);
+}
+
+
+/* --------- IMÁGENES --------- */
+
+.juego img {
+    width: 280px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+/* --------- INFORMACIÓN --------- */
+
+.juego h3 {
+    color: #8b5cf6;
+
+    font-size: 28px;
+
+    margin-bottom: 12px;
+}
+
+.juego p {
+    color: #cfcfcf;
+
+    margin-bottom: 10px;
+
+    line-height: 1.5;
+}
+
+/* --------- GÉNEROS --------- */
+
+.generos {
+    padding: 60px;
+    text-align: center;
+}
+
+.generos h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.generos > p {
+    color: #cfcfcf;
+    margin-bottom: 50px;
+}
+
+
+/* --------- CONTENEDOR --------- */
+
+.contenedor-generos {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+/* --------- TARJETAS --------- */
+
+.genero {
+    width: 300px;
+
+    background-color: #1b1b2d;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.genero:hover {
+    transform: translateY(-10px);
+}
+
+
+/* --------- ICONOS --------- */
+
+.icono-genero {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+
+/* --------- TÍTULOS --------- */
+
+.genero h3 {
+    color: #8b5cf6;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+/* --------- TEXTO --------- */
+
+.genero p {
+    color: #cfcfcf;
+
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+}
+
+
+/* --------- CONTACTO --------- */
+
+.contacto {
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.contacto > p {
+    color: #cfcfcf;
+
+    margin-bottom: 40px;
+}
+
+
+/* --------- FORMULARIO --------- */
+
+form {
+    max-width: 600px;
+
+    margin: auto;
+
+    background-color: #1b1b2d;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    text-align: left;
+}
+
+
+/* --------- ETIQUETAS --------- */
+
+label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    margin-top: 20px;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+/* --------- CAMPOS --------- */
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #292941;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* --------- EFECTO AL SELECCIONAR --------- */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #8b5cf6;
+}
+
+
+/* --------- BOTÓN --------- */
+
+form button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    background-color: #8b5cf6;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #6d3fd1;
+}
+
+/* --------- CONTACTO --------- */
+
+.contacto {
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.contacto > p {
+    color: #cfcfcf;
+
+    margin-bottom: 40px;
+}
+
+
+/* --------- FORMULARIO --------- */
+
+form {
+    max-width: 600px;
+
+    margin: auto;
+
+    background-color: #1b1b2d;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    text-align: left;
+}
+
+
+/* --------- ETIQUETAS --------- */
+
+label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    margin-top: 20px;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+/* --------- CAMPOS --------- */
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #292941;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* --------- EFECTO AL SELECCIONAR --------- */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #8b5cf6;
+}
+
+
+/* --------- BOTÓN --------- */
+
+form button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    background-color: #8b5cf6;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #6d3fd1;
+}
